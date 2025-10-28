@@ -1,0 +1,52 @@
+K=2
+> source("interactive_dapc.R")
+Loading required package: ade4
+
+   /// adegenet 2.1.11 is loaded ////////////
+
+   > overview: '?adegenet'
+   > tutorials/doc/questions: 'adegenetWeb()'
+   > bug reports/feature requests: adegenetIssues()
+
+
+Reading structure file...
+
+ Converting data from a STRUCTURE .stru file to a genind object...
+
+Data loaded successfully
+Running find.clusters...
+Choose the number PCs to retain (>= 1): 500
+Choose the number of clusters (>=2): 2
+ BIC plot saved to step1_BIC_plot.pdf
+Cluster count (K) set to: 2
+Running preliminary DAPC...
+Choose the number PCs to retain (>=1): 60
+Choose the number discriminant functions to retain (>=1): 1
+ Preliminary DAPC plot saved to step2_prelim_dapc.pdf
+Generating PCA scatter plot from preliminary DAPC...
+PCA scatter plot saved to step2_PCA_scatter.pdf
+Optimizing a-score...
+A-score optimization plot saved to step3_a_score_optimization.pdf
+Running final DAPC...
+Choose the number PCs to retain (>=1): 1
+ Choose the number discriminant functions to retain (>=1): 1
+ Final DAPC plot saved to step4_final_dapc.pdf
+Saving clustering results...
+Generating final scatter plot...
+
+===========================================
+Analysis complete! Files saved:
+  - step1_BIC_plot.pdf
+  - step2_prelim_dapc.pdf
+  - step2_PCA_scatter.pdf
+  - step3_a_score_optimization.pdf
+  - step4_final_dapc.pdf
+  - step5_DAPC_scatter_plot.pdf
+  - clustering_key_Rm_refbased_allapples.DAPC.tsv
+===========================================
+Warning messages:
+1: In regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+2: In regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+
